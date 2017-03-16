@@ -1,6 +1,0 @@
-git config --global user.name "zzmhot"
-git config --global user.email "zzmhot@163.com"
-ssh-keygen -t rsa -C "zzmhot@163.com"
-在github里粘贴id_rsa.pub文件的内容
-如果不是github克隆时：git remote add origin git@github.com:zzmhot/vue-weui.git
-推送：git push -u origin master
