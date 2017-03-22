@@ -1,0 +1,72 @@
+.page_home {
+  .item {
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .js_category {
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    z-index: 10;
+    &.active {
+      opacity: .4;
+    }
+    .img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .child_category {
+    z-index: 9;
+    .chile_item {
+      display: flex;
+      position: relative;
+      padding: 10px 20px;
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 0;
+        right: 0;
+        height: 1px;
+        border-top: 1px solid #D9D9D9;
+        color: #D9D9D9;
+        transform-origin: 0 0;
+        transform: scaleY(0.5);
+        left: 15px;
+      }
+    }
+    .weui-cell__bd {
+      flex: 1;
+    }
+    .weui-cell__ft {
+      text-align: right;
+      color: #999999;
+      padding-right: 13px;
+      position: relative;
+      &:before {
+        content: " ";
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        border-width: 2px 2px 0 0;
+        border-color: #C8C8CD;
+        border-style: solid;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        top: -2px;
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: 2px;
+      }
+    }
+  }
+}
